@@ -22,6 +22,7 @@ WORKDIR /app
 
 # Set environment to production
 ENV NODE_ENV=production
+ENV PORT=5054
 
 # Copy necessary files from builder
 COPY --from=builder /app/public ./public
@@ -30,7 +31,7 @@ COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/.env ./
 
 # Expose the port the app runs on
-EXPOSE 3000
+EXPOSE 5054
 
 # Start the application
 CMD ["node", "server.js"] 
