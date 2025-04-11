@@ -3,6 +3,7 @@ Simple Next.JS application to aggregate and display iCal url's feeds in a calend
 ![image](https://github.com/user-attachments/assets/f2ec6046-165a-4eb1-97f5-e6f6f9f68e47)
 
 ## Usage
+ - make a `.env` file using the `.env.example` as a guideline
  - `npm install`
  - `npm run dev`
 
